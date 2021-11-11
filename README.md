@@ -8,3 +8,8 @@
 ```
 
 Adds class "selected" to anchor element when the current route matches the href.
+
+Additional features:
+
+- [ ] Configure class name
+- [ ] Allow for transform to be specified on host container
