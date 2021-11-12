@@ -11,6 +11,14 @@
         <a href="/demo/foo/firstView" be-selectable>My First View</a>
         <a href="/demo/foo/secondView" be-selectable>My Second View</a>
     </nav>
+
+    <button onclick="changePath()"">Change path</button>
+    <script>
+        function changePath(){
+            //history.pushState({}, '', '/demo/foo/secondView');
+            appHistory.navigate('/demo/foo/secondView');
+        }
+    </script>
     <script type=importmap>{
         "imports":{
             "trans-render/": "../node_modules/trans-render/",

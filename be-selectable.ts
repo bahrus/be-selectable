@@ -1,11 +1,20 @@
 import {define, BeDecoratedProps} from 'be-decorated/be-decorated.js';
 import {BeSelectableActions, BeSelectableProps, BeSelectableVirtualProps} from './types';
 import {register} from 'be-hive/register.js';
-
+declare const appHistory: any;
 export class BeSelectableController implements BeSelectableActions{
+    
     intro(proxy: HTMLAnchorElement & BeSelectableVirtualProps, target: HTMLAnchorElement, bdp: BeDecoratedProps): void{
-        const verb = target.href === location.href ? 'add': 'remove';
-        target.classList[verb]('selected');
+        //window.addEventListener('popstate', this.handlePopState);
+        appHistory.addEventListener('navigate', this.handleNavigate);
+        this.checkLink();
+    }
+    handleNavigate = (e: Event) => {
+        this.checkLink();
+    }
+    checkLink(){
+        const verb = this.proxy.href === location.href ? 'add': 'remove';
+        this.proxy.classList[verb]('selected');
     }
 }
 

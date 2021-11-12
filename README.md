@@ -11,5 +11,6 @@ Adds class "selected" to anchor element when the current route matches the href.
 
 Additional features:
 
+- [ ] List for client-side address changes
 - [ ] Configure class name
 - [ ] Allow for transform to be specified on host container
