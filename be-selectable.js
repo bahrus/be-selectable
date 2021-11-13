@@ -23,7 +23,17 @@ define({
         propDefaults: {
             ifWantsToBe,
             upgrade,
-            intro: 'intro'
+            intro: 'intro',
+            proxyPropDefaults: {
+                selected: false,
+            }
+        },
+        propInfo: {
+            selected: {
+                notify: {
+                    dispatch: true,
+                }
+            }
         }
     },
     complexPropDefaults: {

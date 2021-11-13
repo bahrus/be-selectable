@@ -1,7 +1,7 @@
 import {BeDecoratedProps} from 'be-decorated/types';
 
 export interface BeSelectableVirtualProps{
-
+    selected: boolean;
 }
 
 export interface BeSelectableProps extends BeSelectableVirtualProps{
