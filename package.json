@@ -1,10 +1,30 @@
 {
   "name": "be-selectable",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "keywords": [
+    "web-components",
+    "web-component",
+    "custom-element",
+    "custom-elements",
+    "app-history",
+    "anchor-element",
+    "notify",
+    "transform"
+  ],
+  "description": "Adds class 'selected' to anchor element when the current route matches the href.",
+  "main": "be-selectable.js",
+  "module": "be-selectable.js",
+  "exports":{
+    ".": "./be-selectable.js",
+    "./be-selectable.js": "./be-selectable.js"
+  },
+  "files":[
+    "*.*"
+  ],
+  "types": "types.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "package-check": "package-check",
     "start": "web-dev-server --node-resolve --app-index demo/index.html --open"
   },
   "dependencies": {
@@ -21,7 +41,7 @@
     "type": "git",
     "url": "git+https://github.com/bahrus/be-selectable.git"
   },
-  "author": "",
+  "author": "anderson.bruce.b@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bahrus/be-selectable/issues"
