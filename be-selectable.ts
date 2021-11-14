@@ -35,8 +35,9 @@ define<BeSelectableProps & BeDecoratedProps<BeSelectableProps, BeSelectableActio
             virtualProps: ['selected'],
             proxyPropDefaults:{
                 selected: false,
+                emitEvents: ['selected'],
             },
-            emitEvents: ['selected'],
+            
         },
     },
     complexPropDefaults:{
