@@ -32,7 +32,7 @@ define<BeSelectableProps & BeDecoratedProps<BeSelectableProps, BeSelectableActio
             ifWantsToBe,
             upgrade,
             intro: 'intro',
-            virtualProps: ['selected'],
+            virtualProps: ['selected', 'emitEvents'],
             proxyPropDefaults:{
                 selected: false,
                 emitEvents: ['selected'],
