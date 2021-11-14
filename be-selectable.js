@@ -26,15 +26,9 @@ define({
             intro: 'intro',
             proxyPropDefaults: {
                 selected: false,
-            }
+            },
+            emitEvents: ['selected'],
         },
-        propInfo: {
-            selected: {
-                notify: {
-                    dispatch: true,
-                }
-            }
-        }
     },
     complexPropDefaults: {
         controller: BeSelectableController,
