@@ -14,6 +14,7 @@ export class BeSelectableController implements BeSelectableActions{
     }
     checkLink(){
         const verb = this.proxy.href === location.href ? 'add': 'remove';
+        this.proxy.selected = verb === 'add';
         this.proxy.classList[verb]('selected');
     }
 }
