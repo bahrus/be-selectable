@@ -31,6 +31,7 @@ define<BeSelectableProps & BeDecoratedProps<BeSelectableProps, BeSelectableActio
             ifWantsToBe,
             upgrade,
             intro: 'intro',
+            virtualProps: ['selected'],
             proxyPropDefaults:{
                 selected: false,
             },

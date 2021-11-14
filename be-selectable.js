@@ -24,6 +24,7 @@ define({
             ifWantsToBe,
             upgrade,
             intro: 'intro',
+            virtualProps: ['selected'],
             proxyPropDefaults: {
                 selected: false,
             },
