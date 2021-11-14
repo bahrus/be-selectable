@@ -11,4 +11,5 @@ export interface BeSelectableProps extends BeSelectableVirtualProps{
 
 export interface BeSelectableActions{
     intro(proxy: Element & BeSelectableVirtualProps, target: Element, bdp: BeDecoratedProps): void;
+    checkLink(self: this): void;
 }
