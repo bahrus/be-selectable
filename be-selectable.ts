@@ -3,7 +3,7 @@ import {BeSelectableActions, BeSelectableProps, BeSelectableVirtualProps} from '
 import {register} from 'be-hive/register.js';
 declare const appHistory: any;
 export class BeSelectableController implements BeSelectableActions{
-    emitEvents = ['selected'];
+    
     intro(proxy: HTMLAnchorElement & BeSelectableVirtualProps, target: HTMLAnchorElement, bdp: BeDecoratedProps): void{
         //window.addEventListener('popstate', this.handlePopState);
         appHistory.addEventListener('navigate', this.handleNavigate);
@@ -33,6 +33,7 @@ define<BeSelectableProps & BeDecoratedProps<BeSelectableProps, BeSelectableActio
             upgrade,
             intro: 'intro',
             virtualProps: ['selected'],
+            emitEvents: ['selected'],
             proxyPropDefaults:{
                 selected: false,
             },

@@ -1,7 +1,6 @@
 import { define } from 'be-decorated/be-decorated.js';
 import { register } from 'be-hive/register.js';
 export class BeSelectableController {
-    emitEvents = ['selected'];
     intro(proxy, target, bdp) {
         //window.addEventListener('popstate', this.handlePopState);
         appHistory.addEventListener('navigate', this.handleNavigate);
@@ -27,6 +26,7 @@ define({
             upgrade,
             intro: 'intro',
             virtualProps: ['selected'],
+            emitEvents: ['selected'],
             proxyPropDefaults: {
                 selected: false,
             },
